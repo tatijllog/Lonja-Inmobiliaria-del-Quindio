@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Lonja Inmobiliaria del Quindío</title>
+    <link rel="shortcut icon" href="./../assets/favicon-lonja.svg">
+    <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+    <header>
+        <a title="Inicio" href="./../index.html" ><img src="./../assets/logo-lonja.svg" alt="Logo Lonja Inmobiliaria del Quindío"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor-contacto">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.58323893323032!2d-75.67280657137896!3d4.534137796465109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ac3a377b07%3A0x9aaa5cb6d19d99e5!2zw5NwdGljYSBWaXNpw7NuICYgVmlkYQ!5e0!3m2!1ses!2sco!4v1694922631857!5m2!1ses!2sco" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>            
+        </div>
+        <div class="card-contacto">
+            <h1>Escríbenos y nos comunicaremos pronto contigo</h1>
+            <form action="procesar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                        
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                        
+                <label for="avaluo">Avalúo que requiere:</label>
+                <select id="avaluo" name="avaluo">
+                    <option value="Avalúo 1">Avalúo 1</option>
+                    <option value="Avalúo 2">Avalúo 2</option>
+                    <option value="Avalúo 3">Avalúo 3</option>
+                    <option value="Avalúo 4">Avalúo 4</option>
+                    <option value="Avalúo 5">Avalúo 5</option>
+                    <option value="Avalúo 6">Avalúo 6</option>
+                    <option value="Avalúo 7">Avalúo 7</option>
+                    <option value="Avalúo 8">Avalúo 8</option>
+                    <option value="Avalúo 9">Avalúo 9</option>
+                    <option value="Avalúo 10">Avalúo 10</option>
+                    <option value="Avalúo 11">Avalúo 11</option>
+                </select>
+                        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        
+                <label>
+                    <input type="checkbox" name="casilla" required>
+                    Acepto el tratamiento de mis datos personales
+                </label>
+                        
+                <input type="submit" value="Enviar">
+            </form>     
+        </div>
+    </main>
+    <footer class="footer-flex">
+        <div class="footer-card">
+            <h3>Somos parte de</h3>
+            <img src="./../assets/asolonjas.jpg" alt="Asolonjas">
+        </div>
+        <div class="footer-card">
+            <ul>
+                <li>
+                    Cra 15 #18-22, Ed. Solidaridad, of 307 <br> Armenia - Quindío
+                </li>
+                <li>
+                    (+57) 606 7412270
+                </li>
+                <li>
+                    (+57) 606 7441955
+                </li>
+                <li>
+                    asolonjasquindio@gmail.com
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
