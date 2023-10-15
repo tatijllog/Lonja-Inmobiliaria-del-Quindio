@@ -11,8 +11,7 @@ html{
 }
 
 /* header*/
-header{
-    background-color: #ffffff;
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,45 +19,47 @@ header{
     position: sticky;
     top: 0px;
     z-index: 1000;
+    background-color: #ffffff;
+    color: #354041;
 }
 
-header img{
+header img {
     height: 60px;
 }
 
-header nav ul{
+header nav ul {
     list-style: none;
     display: flex;
     column-gap: 10px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
-}
-
-header nav ul li a{
-    color: #354041
+    font-family: Calibri, sans-serif;
+    color: #354041;
 }
 
 /* main */
 .banner-principal{
     background-image: url(./../assets/ingeniero-planos.jpg);
     background-position: center;
-    background-size: cover;
+    width: 100vw;
     height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-principal-texto{
-position: absolute;
-top: 200px;
-left: 50px;
-font-size: 50px;
-font-weight: 300;
-text-transform: uppercase;
-z-index: 999;
+    /* position: absolute; */
+    font-family: Calibri, sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .contenedor-flex{
@@ -66,7 +67,7 @@ z-index: 999;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px;
-    background-color: #53565A;
+    background-color: #E1E000;
     color: #ffffff;
     align-items: center;
     gap: 40px;
@@ -80,6 +81,7 @@ z-index: 999;
     grid-area: card,card,card;
     background-color: #53565A;
     color:#ffffff;
+    font-family: Calibri, sans-serif;
 }
 
 .contenedor-grid-nosotros{
@@ -88,6 +90,7 @@ z-index: 999;
     align-items: center;
     justify-self: center;
     grid-area: card-nosotros,card-nosotros;
+    font-family: Calibri, sans-serif;
 }
 
 .card{
@@ -97,6 +100,8 @@ z-index: 999;
     height: 380px;
     justify-self: center;
     align-items: center;
+    font-family: Calibri, sans-serif;
+    background-color: #53565A;
 }
 
 .card img{
@@ -112,6 +117,8 @@ z-index: 999;
     height: 180px;
     text-align: center;
     padding: 10px;
+    font-family: Calibri, sans-serif;
+    color: #ffffff;
 }
 
 .card-text a{
@@ -140,7 +147,8 @@ z-index: 999;
     align-items: center;
     justify-self: center;
     grid-area: card,card;
-    height: 100vh
+    height: 100vh;
+    font-family: Calibri, sans-serif;
 }
 
 .card-contacto{
@@ -161,6 +169,7 @@ z-index: 999;
     padding: 10px;
     gap: 40px;
     height: 200px;
+    font-family: Calibri, sans-serif;
 }
 
 footer div ul{
@@ -177,4 +186,22 @@ footer img{
     height: 180px;
     padding: 10px;
     text-align: center;
+}
+
+/* media queries */
+/* media tablet */
+/* @media screen and (max-width 1024px){
+    
+} */
+
+/* media mobile */
+@media screen and (max-width 768px){
+    .banner-principal-texto{
+        position: absolute;
+        font-family: Calibri, sans-serif;
+        font-weight: 300;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
