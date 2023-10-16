@@ -141,31 +141,41 @@ header nav ul li a {
     margin-right: 50px;
 }
 
+.boton-verde{
+    background-color: #E1E000;
+}
+
 .contenedor-contacto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-self: center;
-    grid-area: card,card;
-    height: 100vh;
+    /* align-items: center; */
+    /* justify-self: center; */
+    grid-area: "mapa-contacto", "formulario-contacto";
+    /* height: 100vh; */
     font-family: Calibri, sans-serif;
+    padding: 10px;
 }
 
-.card-contacto{
+.mapa-contacto{
+    width: 50vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+.formulario-contacto{
+    width: 50vw;
+    height: 100vh;
     align-items: center;
-}
-
-.boton-verde{ 
-    background-color: #E1E000;
+    padding: 10px;
 }
 
 /* footer */
 .footer-flex{
-    background-color: #ffffff;       
+    background-color: #ffffff;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
-    align-items: center;    
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     gap: 40px;
     height: 200px;
@@ -189,10 +199,6 @@ footer img{
 }
 
 /* media queries */
-/* media tablet */
-/* @media screen and (max-width 1024px){
-    
-} */
 
 /* media mobile */
 @media screen and (max-width 768px){
@@ -203,5 +209,14 @@ footer img{
         font-size: 50px;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    .contenedor-contacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-area: 
+        "mapa-contacto"
+        "formulario-contacto";
+        width: 100vw;
     }
 }

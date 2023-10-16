@@ -32,47 +32,32 @@
     </header>
     <main class="contenedor-contacto">
         <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248.58323893323032!2d-75.67280657137896!3d4.534137796465109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5ac3a377b07%3A0x9aaa5cb6d19d99e5!2zw5NwdGljYSBWaXNpw7NuICYgVmlkYQ!5e0!3m2!1ses!2sco!4v1694922631857!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>            
+            <iframe class="mapa-contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.3326776262593!2d-75.67751403112169!3d4.53398253303087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f5fa20e3a179%3A0x57aef4107ab9791c!2sEdificio%20Firenze!5e0!3m2!1ses!2sco!4v1697411206864!5m2!1ses!2sco" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="card-contacto">
+        <form class="formulario-contacto">
             <h1>Escríbenos y nos comunicaremos pronto contigo</h1>
-            <form action="procesar.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-                        
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-                        
-                <label for="avaluo">Avalúo que requiere:</label>
-                <select id="avaluo" name="avaluo">
-                    <option value="Avalúo 1">Avalúo 1</option>
-                    <option value="Avalúo 2">Avalúo 2</option>
-                    <option value="Avalúo 3">Avalúo 3</option>
-                    <option value="Avalúo 4">Avalúo 4</option>
-                    <option value="Avalúo 5">Avalúo 5</option>
-                    <option value="Avalúo 6">Avalúo 6</option>
-                    <option value="Avalúo 7">Avalúo 7</option>
-                    <option value="Avalúo 8">Avalúo 8</option>
-                    <option value="Avalúo 9">Avalúo 9</option>
-                    <option value="Avalúo 10">Avalúo 10</option>
-                    <option value="Avalúo 11">Avalúo 11</option>
-                </select>
-                        
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                        
-                <label>
-                    <input type="checkbox" name="casilla" required>
-                    Acepto el tratamiento de mis datos personales
-                </label>
-                        
-                <input type="submit" value="Enviar">
-            </form>     
-        </div>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="nombreHelp">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" aria-describedby="telefonoHelp">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <input type="text" class="form-control" id="mensaje" name="mensaje" aria-describedby="mensajeHelp">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkbox" name="aceptoTratamiento">
+                <label class="form-check-label" for="checkbox">Acepto el tratamiento de mis datos personales</label>
+            </div>
+            <button type="button" class="boton-verde">Enviar</button>
+        </form>
     </main>
     <footer class="footer-flex">
         <div class="footer-card">
